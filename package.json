@@ -1,6 +1,6 @@
 {
   "name": "istanbul",
-  "version": "0.4.5",
+  "version": "0.4.5-moos.2",
   "description": "Yet another JS code coverage tool that computes statement, line, function and branch coverage with module loader hooks to transparently add coverage when running tests. Supports all JS coverage use cases including unit tests, server side functional tests and browser tests. Built for scale",
   "keywords": [
     "coverage",
@@ -10,6 +10,7 @@
   ],
   "author": "Krishnan Anantheswaran <kananthmail-github@yahoo.com>",
   "license": "BSD-3-Clause",
+  "repository": "github:moos/istanbul",
   "contributors": [
     "Reid Burke <me@reidburke.com>",
     "Martin Cooper <mfncooper@gmail.com>",
@@ -103,10 +104,6 @@
     "index.js",
     "lib/"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/gotwarlost/istanbul.git"
-  },
   "dependencies": {
     "abbrev": "1.0.x",
     "async": "1.x",

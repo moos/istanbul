@@ -1,3 +1,13 @@
+## Why the Moos fork?
+This fork incorporates [https://github.com/gotwarlost/istanbul/pull/689](PR 689) ('text-folders' report) and [https://github.com/moos/istanbul/pull/1](moos/PR 1) (recursive totals in HTML report). Type istanbul help report for more.
+
+v0.4.5-moos.1 includes [https://github.com/gotwarlost/istanbul/pull/771](PR 771) (relative option to lcov format files)
+
+```
+$ npm install -g istanbul-moos
+```
+
+
 ## Istanbul - a JS code coverage tool written in JS
 
 [![Build Status](https://secure.travis-ci.org/gotwarlost/istanbul.svg?branch=master)](http://travis-ci.org/gotwarlost/istanbul)
@@ -5,7 +15,7 @@
 [![Coverage Status](https://img.shields.io/coveralls/gotwarlost/istanbul.svg)](https://coveralls.io/r/gotwarlost/istanbul?branch=master)
 [![bitHound Score](https://www.bithound.io/github/gotwarlost/istanbul/badges/score.svg)](https://www.bithound.io/github/gotwarlost/istanbul)
 
-[![NPM](https://nodei.co/npm/istanbul.png?downloads=true)](https://nodei.co/npm/istanbul/)
+[![NPM](https://nodei.co/npm/istanbul-moos.png?downloads=true)](https://nodei.co/npm/istanbul-moos/)
 
 **New** `v0.4.0` now has beautiful HTML reports. Props to Tom MacWright @tmcw for a fantastic job!
 
