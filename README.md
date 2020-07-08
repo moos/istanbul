@@ -1,7 +1,7 @@
 ## Why the Moos fork?
-This fork incorporates [https://github.com/gotwarlost/istanbul/pull/689](PR 689) ('text-folders' report) and [https://github.com/moos/istanbul/pull/1](moos/PR 1) (recursive totals in HTML report). Type istanbul help report for more.
+This fork incorporates (PR 689)[https://github.com/gotwarlost/istanbul/pull/689] ('text-folders' report) and (moos/PR 1)[https://github.com/moos/istanbul/pull/1] (recursive totals in HTML report). Type istanbul help report for more.
 
-v0.4.5-moos.1 includes [https://github.com/gotwarlost/istanbul/pull/771](PR 771) (relative option to lcov format files)
+v0.4.5-moos.2 includes (PR 771)[https://github.com/gotwarlost/istanbul/pull/771] (relative option to lcov format files)
 
 ```
 $ npm install -g istanbul-moos
