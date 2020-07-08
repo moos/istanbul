@@ -13,10 +13,45 @@
             background-image: url({{sorter.image}});
         }
     </style>
+{{#if isRoot}}
+    <script>
+    function onDepthChange(value){
+      document.body.className = document.body.className.replace(/\s*at-depth-\d+/,'') + ' at-depth-' + value;
+    }
+    function onRecursiveChange(checked, event){
+      var ie8 = /MSIE 8/.test(navigator.userAgent);
+      if (checked === null && !ie8) { // prevent sorter clicks
+          if(event.stopPropagation) {
+              event.stopPropagation();
+          } else {
+              event.returnValue = false;
+          }
+          return false;
+      }
+      if (ie8) event.srcElement.blur();
+      toggleClass(document.body, 'normal');
+      toggleClass(document.body, 'recursive');
+    }
+    function toggleClass(el, name) {
+      if (el.className.indexOf(name) > -1) {
+        el.className = el.className.replace(name, '');
+      } else {
+        el.className += ' ' + name;
+      }
+    }
+    </script>
+    {{#depth_styles}}{{/depth_styles}}
+{{/if}}
 </head>
-<body>
+<body class="normal">
 <div class='wrapper'>
   <div class='pad1'>
+      {{#if isRoot}}
+        <div class='fr space-right2'>
+          <label for="depthSlider" class="quiet">show depth</label>
+          <input type="range" id="depthSlider" min="1" max="10" oninput="onDepthChange(value)" onchange="onDepthChange(value)"/>
+        </div>
+      {{/if}}
     <h1>
       {{{pathHtml}}}
     </h1>
